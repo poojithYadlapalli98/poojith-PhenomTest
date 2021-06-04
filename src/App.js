@@ -14,21 +14,21 @@ class App extends React.Component  {
   constructor(props) {
     super(props);
   
-    // Setting up state
+  
     this.state = {
       userInput : "",
       list:[]
     }
   }
   
-  // Set a user input value
+
   updateInput(value){
     this.setState({
       userInput: value,
     });
   }
   
-  // Add item if user input in not empty
+  
   addItem(){
     if(this.state.userInput !== '' ){
       const userInput = {
